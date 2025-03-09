@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Detail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./soley.js" defer></script>
+  </head>
+  <body>
+    <main class="detail-main main container">
+      <header class="header">
+        <div class="header-wrapper row align-items-center">
+          <div class="header-wrap col d-flex align-items-center">
+            <a href="./index.html" class="back-btn-wrap">
+              <img src="../ASSETS/back-to-home.svg" alt="back to home" class="back-btn" id="back-btn" />
+            </a>
+            <div class="name-wrap">
+              <h1 class="name"></h1>
+            </div>
+          </div>
+          <div class="pokemon-id-wrap col-auto">
+            <p class="body2-fonts"></p>
+          </div>
+        </div>
+      </header>
+      <div class="featured-img d-flex justify-content-center align-items-center">
+        <a href="#" class="arrow left-arrow me-3" id="leftArrow">
+          <img src="../ASSETS/chevron_left.svg" alt="back" />
+        </a>
+        <div class="detail-img-wrapper">
+          <img src="" alt="" />
+        </div>
+        <a href="#" class="arrow right-arrow ms-3" id="rightArrow">
+          <img src="../ASSETS/chevron_right.svg" alt="forward" />
+        </a>
+      </div>
+      <div class="detail-card-detail-wrapper">
+        <div class="power-wrapper d-flex justify-content-center gap-3">
+          <p class="body3-fonts type grass"></p>
+          <p class="body3-fonts type poison"></p>
+        </div>
+        <p class="body2-fonts about-text text-center mt-3">About</p>
+        <div class="pokemon-detail-wrapper row text-center">
+          <div class="pokemon-detail-wrap col-md-4">
+            <div class="pokemon-detail">
+              <img src="../ASSETS/weight.svg" alt="weight" />
+              <p class="body3-fonts weight"></p>
+            </div>
+            <p class="caption-fonts">Weight</p>
+          </div>
+          <div class="pokemon-detail-wrap col-md-4">
+            <div class="pokemon-detail">
+              <img src="../ASSETS/height.svg" alt="height" class="straighten" />
+              <p class="body3-fonts height"></p>
+            </div>
+            <p class="caption-fonts">Height</p>
+          </div>
+          <div class="pokemon-detail-wrap col-md-4">
+            <div class="pokemon-detail move"></div>
+            <p class="caption-fonts">Move</p>
+          </div>
+        </div>
+        <p class="body3-fonts pokemon-description text-center mt-3"></p>
+        <p class="body2-fonts about-text text-center mt-3">Base Stats</p>
+        <div class="stats-wrapper container"></div>
+      </div>
+      <img src="../ASSETS/pokedex.svg" alt="pokedex" class="detail-bg img-fluid mx-auto d-block" />
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
